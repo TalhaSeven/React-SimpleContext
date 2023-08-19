@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+## Simple React Context Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Context Example: Theme and User Contexts
 
-## Available Scripts
+### Description
 
-In the project directory, you can run:
+This project demonstrates the usage of React Context API to manage theme and user data between different components within a React application. It illustrates how to create, provide, and consume contexts to maintain global state within a React app.
 
-### `yarn start`
+### Contexts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Theme Context
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Theme Context is responsible for managing the application's theme. It allows users to switch between light and dark themes. The theme choice is stored in the browser's localStorage for persistence.
 
-### `yarn test`
+#### User Context
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The User Context manages user-related data. It handles user login and logout functionalities.
 
-### `yarn build`
+### Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Profile
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The `Profile` component displays user information and provides functionality for logging in and logging out.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Header
 
-### `yarn eject`
+The `Header` component displays the active theme and provides a button to toggle between light and dark themes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Button
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `Button` component displays the active theme and provides a button to toggle between light and dark themes. This component can be used both within the `Container` component and as a standalone component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Basit React Context Örneği
 
-## Learn More
+React Context Örneği: Tema ve Kullanıcı Kontekstleri
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Açıklama
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Bu proje, React Context API'nın kullanımını göstererek, bir React uygulamasındaki farklı bileşenler arasında tema ve kullanıcı verilerini yönetmeyi sergiler. React uygulaması içinde global durumu korumak için bağlamaları oluşturmayı, sağlamayı ve tüketmeyi gösterir.
 
-### Code Splitting
+### Kontekstler
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Tema Konteksti
 
-### Analyzing the Bundle Size
+Tema Konteksti, uygulamanın temasını yönetmekten sorumludur. Kullanıcılara açık ve karanlık tema arasında geçiş yapma olanağı sunar. Tema seçimi tarayıcının localStorage'unda süreklilik için saklanır.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Kullanıcı Konteksti
 
-### Making a Progressive Web App
+Kullanıcı Konteksti, kullanıcıyla ilgili verileri yönetir. Kullanıcı girişi ve çıkışı işlevselliğini yönetir.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Bileşenler
 
-### Advanced Configuration
+#### Profil
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`Profil` bileşeni kullanıcı bilgilerini görüntüler ve giriş yapma ile çıkış yapma işlevselliği sunar.
 
-### Deployment
+#### Başlık
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+`Başlık` bileşeni etkin temayı görüntüler ve açık ve karanlık temalar arasında geçiş yapma düğmesi sağlar.
 
-### `yarn build` fails to minify
+#### Düğme
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`Düğme` bileşeni etkin temayı görüntüler ve açık ve karanlık temalar arasında geçiş yapma düğmesi sağlar. Bu bileşen hem `Container` içinde hem de bağımsız bir bileşen olarak bulunabilir.
